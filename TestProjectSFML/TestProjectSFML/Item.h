@@ -17,7 +17,11 @@ public:
 
 	void draw(sf::RenderTarget&, sf::RenderStates) const;
 
+	void setPosition(sf::Vector2f);
+
+	bool checkPosition(sf::Vector2f);
+
 private : 
-	sf::RectangleShape shapes;
+	sf::RectangleShape shapes[9];
 };
 
